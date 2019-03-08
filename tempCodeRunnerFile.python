@@ -1,0 +1,16 @@
+import re
+
+def isMatch(self, s, p):
+        """
+        :type s: str
+        :type p: str
+        :rtype: bool
+        """
+        a=re.findall(p,s)
+        b=[s]
+        if(a==b):
+            return True
+        else:
+            return False
+        
+isMatch("aa","a.")        
