@@ -11,15 +11,16 @@ a{
   width: auto;
   height: 1em;
 text-align: center;
-font-size: 60px;
+font-size: 5em;
 font-style: italic;
-margin: 25px 0 15px 0;
+margin:0;
 font-family: 'Times New Roman', Times, serif ;
+padding: 0.5em;
 background-color: rgb(223, 223, 223)
 
 }
 .mainbody{
-   height: 40rem;
+   /* height: 40rem; */
    margin-top: 2rem;
    width: 78em;
    display: inline-block;
@@ -67,7 +68,7 @@ padding-bottom: 2.2%;
     border-bottom: 5px solid rgb(255, 146, 83);
 }
 a.i:hover 
-{   transition: filter 1s linear ;
+{   transition: 0.5s;
     
     color: orange;
      
@@ -76,13 +77,19 @@ a.i:hover
 
 .cat
 { 
-    width:10%;
-    height: 40em;
+    transition: 0.5s;
+    width:1em;
+    
+    height: 35em;
     background-color:  rgb(41, 93, 114);
     position:fixed;
 line-height: 700%;
 border-top-right-radius:50px;
 border-bottom-right-radius: 50px; }
+.cat:hover{
+    width:8em; 
+    transition: 0.1s;
+}
 .cat-content{
 
     
@@ -96,12 +103,24 @@ border-bottom-right-radius: 50px; }
     
 }
 .cat:hover /*.cat-content*/ .w{
-    transition: filter 1s linear ;
-    display: none;
+    display: block;
  
 }
+.button2
+{width: 2em;
+height: 2em;
+display: block;
+position: relative;
+left:40%;
+border-radius: 1em;
+border: 0;
+background-color: rebeccapurple;}
+.button:active .w{
+    display: none;
+
+}
 .detail{
-    margin: 70% 0 0 20%;
+    margin: 10% 0 0 20%;
     display: none;
      align-content: center;
      font-weight: bold;
@@ -112,10 +131,11 @@ display: block;
 
 
 p.w{
+    display:none;
     font-weight: bolder;
     font-family: 'Times New Roman', Times, serif;
 position: relative;
-top: 10%;
+top: 0;
 text-align: center;
 font-size: 30px;
 
@@ -129,7 +149,7 @@ font-size: 30px;
    
    top: 0%;
    left:10% ;
-   height:40em;
+   height:40em; 
 }
 
 .picbox{
@@ -230,7 +250,7 @@ img
 .outline{
     width: 32%;
     float: left;
-    height: 50em;
+     
     margin:8px 6px 10px 6px;
     
 
@@ -289,6 +309,9 @@ margin-left: 10%;
     display:block;
     
     
+}
+.ghost:hover .like{
+    display: block;
 }
 
 /*.outline:hover .picbox2_1,
@@ -387,3 +410,79 @@ margin-left: 10%;
     font-weight: bold;
 
 }
+.button {
+    display: inline-block;
+    position: relative;
+    left:-10%;
+    border-radius: 4px;
+    background-color: #fd7a52;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 1em;
+    padding:0.5em ;
+    width: 5em;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    font-weight: bold;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  .detail a{
+      background-color: #f4511e;
+      widows: 2em;
+      height: 2em;
+border-radius: 1em; 
+
+
+color: black;
+
+
+position: relative;
+left:-10%;
+border-radius: 4px;
+background-color: #fd7a52;
+border: none;
+
+text-align: center;
+font-size: 1em;
+padding:0.5em ;
+width: 5em;
+transition: all 0.5s;
+cursor: pointer;
+margin: 5px;
+ }
+.h
+{
+    font-size: 10em;
+    color: red;
+}
+.like{ font-size:2em; margin: 0em 0 0 8em; color:#ccc; cursor:pointer;display: none;} /*原始样式*/
+.cs{color:#f00;}
+.like1{ font-size:66px;  color:#f00; cursor:pointer;
+display: inline-block;
+margin: 0 2em 0 0;}
